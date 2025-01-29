@@ -4,12 +4,7 @@
     class="py-20 bg-white"
   >
     <div class="max-w-6xl mx-auto px-8">
-      <div
-        class="text-center mb-12"
-        v-motion
-        :initial="{ opacity: 0, y: 50 }"
-        :enter="{ opacity: 1, y: 0 }"
-      >
+      <div class="text-center mb-12">
         <h2 class="text-4xl font-bold text-gray-900 mb-4">My Projects</h2>
         <div class="w-20 h-1 bg-indigo-600 mx-auto"></div>
       </div>
@@ -18,9 +13,6 @@
           v-for="project in projects"
           :key="project.title"
           class="bg-white rounded-lg shadow-lg overflow-hidden"
-          v-motion
-          :initial="{ opacity: 0, y: 50 }"
-          :enter="{ opacity: 1, y: 0 }"
         >
           <img
             :src="project.image"
@@ -54,8 +46,6 @@
 </template>
 
 <script setup>
-import { useMotion } from '@vueuse/motion';
-
 const projects = [
   {
     title: 'E-Commerce Platform',

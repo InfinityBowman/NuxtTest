@@ -4,20 +4,12 @@
     class="py-20 bg-gray-50"
   >
     <div class="max-w-4xl mx-auto px-8">
-      <div
-        class="text-center mb-12"
-        v-motion
-        :initial="{ opacity: 0, y: 50 }"
-        :enter="{ opacity: 1, y: 0 }"
-      >
+      <div class="text-center mb-12">
         <h2 class="text-4xl font-bold text-gray-900 mb-4">Get In Touch</h2>
         <div class="w-20 h-1 bg-indigo-600 mx-auto"></div>
       </div>
       <form
         class="space-y-6"
-        v-motion
-        :initial="{ opacity: 0, y: 50 }"
-        :enter="{ opacity: 1, y: 0 }"
         @submit="handleSubmit"
       >
         <div class="grid md:grid-cols-2 gap-6">
@@ -80,9 +72,6 @@
       <div
         v-if="messages.length > 0"
         class="mt-12 space-y-6"
-        v-motion
-        :initial="{ opacity: 0, y: 50 }"
-        :enter="{ opacity: 1, y: 0 }"
       >
         <h3 class="text-2xl font-semibold text-gray-900 mb-6">Recent Messages</h3>
         <div class="space-y-4">
@@ -104,7 +93,6 @@
 </template>
 
 <script setup>
-import { useMotion } from '@vueuse/motion';
 import { ref, onMounted } from 'vue';
 
 const name = ref('');

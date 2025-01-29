@@ -56,7 +56,7 @@ Add this configuration:
 ```nginx
 server {
     listen 80;
-    server_name 18.119.126.13; # Or your EC2 public IP
+    server_name 18.119.126.13;
 
     location / {
         proxy_pass http://localhost:3000;

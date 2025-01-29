@@ -1,8 +1,8 @@
 <template>
   <div>
-    <Hero />
+    <!-- <Hero />
     <About />
-    <Projects />
+    <Projects /> -->
     <Contact />
   </div>
 </template>

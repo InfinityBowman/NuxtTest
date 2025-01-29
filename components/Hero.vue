@@ -2,12 +2,7 @@
   <section
     class="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-600 to-indigo-800 text-white p-8"
   >
-    <div
-      class="max-w-4xl mx-auto text-center"
-      v-motion
-      :initial="{ opacity: 0, y: 100 }"
-      :enter="{ opacity: 1, y: 0 }"
-    >
+    <div class="max-w-4xl mx-auto text-center">
       <h1 class="text-5xl md:text-7xl font-bold mb-6">Hi, I'm Jacob</h1>
       <p class="text-xl md:text-2xl mb-8">Full Stack Developer & Tech Enthusiast</p>
       <div class="flex justify-center gap-4">
@@ -28,6 +23,4 @@
   </section>
 </template>
 
-<script setup>
-import { useMotion } from '@vueuse/motion';
-</script>
+<script setup></script>
